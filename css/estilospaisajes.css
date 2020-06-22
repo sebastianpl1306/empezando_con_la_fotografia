@@ -1,0 +1,198 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	background: #02010a;
+	font-family: Dancing Script;
+}
+
+#contenido	{
+	width: 900px;
+	margin: auto;
+	animation: entrada 1s;
+}
+
+@-webkit-keyframes entrada {
+	from {
+		margin-top: 1000px;
+	}
+
+	to {
+		margin-top: 0px;
+	}
+}
+
+img {
+	-webkit-filter: drop-shadow(2px 2px 2px #02010a);
+}
+
+/*esta es la cabezera */
+
+header {
+	border-top-right-radius:10px;
+	border-top-left-radius:10px;
+	width: 100%;
+	background:  #5b7989;
+	text-align: center;
+	color: #fff;
+}
+
+header div {
+	padding: 20px;
+}
+
+h1 {
+	text-shadow: 2px 2px #02010a;
+	float: left;
+	overflow: hidden;
+}
+
+nav {
+	height: 100%;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	overflow: hidden;
+	height: 100%;
+}
+
+nav ul li {
+	float: right;
+	display: block;
+	margin: 0px 5px;
+	padding:15px 0px;
+	height: 100%;
+}
+
+nav ul li a {
+	font-size: 20px;
+	padding: 5px;
+	color: white;
+}
+
+nav ul li a:hover {
+	border:2px solid white;
+	border-radius: 5px;
+	background: #000;
+}
+
+nav ul li a:active {
+	font-size: 25px;
+}
+
+.pagina {
+	text-decoration: none;
+}
+
+section {
+	clear: both;
+}
+
+#secundaria {
+	width: 100%;
+	background: #d5c75f;
+	text-align: center;
+	border: 1px;
+	padding: 50px 0px;
+	display:inline-flex;
+}
+
+#secundaria article figure img {
+	margin: 10px;
+	width: 25%;
+	border:2px solid black;
+	transform: rotate(0deg);
+}
+
+#efecto1 {
+	-webkit-filter: blur(10px);
+}
+
+#efecto2 {
+	-webkit-filter: grayscale(100%);
+}
+
+#efecto3 {
+	-webkit-filter: sepia(90%);
+}
+
+#efecto4 {
+	-webkit-filter: grayscale(100%);
+}
+
+#efecto5 {
+}
+
+#efecto6 {
+	-webkit-filter: grayscale(100%);
+}
+
+footer {
+
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	width: 100%;
+	background: #C6d5c5;
+}
+
+
+footer div {
+	width: 100%;
+	padding: 20px 50px;
+	display: inline-flex;
+}
+
+
+footer div article {
+	overflow: hidden;
+	flex-basis: 25%;
+}
+
+ {
+	width: 100%;
+	background: #d5c75f;
+	text-align: center;
+	border: 1px;
+	padding: 50px 0px;
+	display:inline-flex;
+}
+
+@media (min-width: 360px) and (max-width: 900px){
+
+#contenido {
+	width: 100%;
+}
+
+h1 {
+	float: none;
+	margin: 10px;
+}
+
+nav ul li {
+	float: none;
+	display: inline;
+}
+
+#principal article figure img {
+	width: 80%;
+}
+
+#secundaria article figure img {
+	margin: 10px;
+	width: 80%;
+}
+
+footer div {
+	display: block;
+}
+
+footer div article{
+	margin: 0px 0px 15px 5px;
+	display: block;
+}
+
+}
